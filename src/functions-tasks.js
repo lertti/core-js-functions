@@ -89,9 +89,9 @@ function getPowerFunction(exponent) {
  */
 function getPolynom(...coefficients) {
   if (coefficients.length === 0) return null;
-  const indecies = [...coefficients].reverse();
+  const indices = [...coefficients].reverse();
   return (x) =>
-    indecies.reduce((acc, coeff, index) => acc + coeff * x ** index, 0);
+    indices.reduce((acc, coeff, index) => acc + coeff * x ** index, 0);
 }
 
 /**
